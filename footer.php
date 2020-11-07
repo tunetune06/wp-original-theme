@@ -9,7 +9,7 @@
             <p class="profile-name">渡辺 俊</p>
             <p class="profile-text">
               渡辺俊と申します。未経験からエンジニアを目指し活動中。
-              勉強内容等を発進中！！
+              勉強内容等を発進しています。
             </p>
           </li>
           <?php dynamic_sidebar('footer'); ?>

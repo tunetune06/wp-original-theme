@@ -99,6 +99,13 @@ li {
   color: #141414;
 }
 
+@media screen and (max-width: 959px) {
+  .header .header-inner .site-title a {
+    font-size: 1rem;
+    font-family: monospace;
+  }
+}
+
 .header .header-inner .nav-wrapper {
   height: 100%;
   display: flex;
@@ -243,7 +250,7 @@ li {
 .fv {
   width: 100vw;
   height: 80vh;
-  background: url(../images/storytelling-4203628_640.jpg);
+  background: url(../images/storytelling-4203628_641.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -380,12 +387,6 @@ li {
 
 .text-notfound {
   text-align: center;
-}
-
-.about {
-  background: rgba(255, 255, 255, 0.8);
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .article-title {
