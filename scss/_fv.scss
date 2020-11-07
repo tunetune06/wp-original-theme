@@ -1,0 +1,44 @@
+// フロントページのスタイル
+.fv {
+  width: 100vw;
+  height: 80vh;
+  background: url(../images/storytelling-4203628_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  .main-copy {
+    padding: 80px 0 0 5%;
+    color: $color-accent-green;
+    font-family: $font-section-title;
+    text-shadow: 0 1px 0 #ccc, 0 3px 0 #ccc, 0 4px 10px rgba(0, 0, 0, .2);
+    @include mobile {
+      font-size: 2.6rem;
+      text-align: center;
+      padding-left: 0;
+    }
+    h2 {
+      font-size: 6rem;
+      font-weight: normal;
+      @include mobile {
+        font-size: 2.6rem;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: 2.6rem;
+      @include mobile {
+        font-size: 1.8rem;
+        margin-top: 60px;
+        text-align: center;
+      }
+    }
+  }
+  .fv-message {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, .8);
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+}
