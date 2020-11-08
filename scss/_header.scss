@@ -14,7 +14,7 @@
       a {
         color: $color-black;
           @include mobile {
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-family: monospace;
           }
       }
@@ -49,7 +49,7 @@
   #menu-icon {
     display: none;
     background-color: $color-accent;
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 50%;
     margin: 30px;
@@ -65,7 +65,7 @@
     // 三つの棒のスタイル
     > span {
       background-color: #fff;
-      width: 35px;
+      width: 30px;
       height: 2px;
       display: block;
       margin-bottom: 9px;
@@ -93,7 +93,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   li {
     margin-bottom: 50px;
     a {

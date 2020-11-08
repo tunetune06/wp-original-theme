@@ -61,6 +61,9 @@ li {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 90px;
+  @include mobile {
+    font-size: 2rem;
+  }
 }
 
 //sectionの共通inner設定

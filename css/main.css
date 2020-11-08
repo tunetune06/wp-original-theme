@@ -69,6 +69,12 @@ li {
   margin-bottom: 90px;
 }
 
+@media screen and (max-width: 959px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
 .section-common {
   margin: 90px 15%;
   padding: 16px 4vw;
@@ -101,7 +107,7 @@ li {
 
 @media screen and (max-width: 959px) {
   .header .header-inner .site-title a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: monospace;
   }
 }
@@ -139,7 +145,7 @@ li {
 .header #menu-icon {
   display: none;
   background-color: #6F6152;
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 50%;
   margin: 30px;
@@ -159,7 +165,7 @@ li {
 
 .header #menu-icon > span {
   background-color: #fff;
-  width: 35px;
+  width: 30px;
   height: 2px;
   display: block;
   margin-bottom: 9px;
@@ -185,7 +191,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
 }
 
 #menu li {
@@ -394,6 +400,12 @@ li {
   text-align: center;
   margin-bottom: 90px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 959px) {
+  .article-title {
+    font-size: 2rem;
+  }
 }
 
 .thumbnail-eye {
