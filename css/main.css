@@ -148,7 +148,7 @@ li {
   padding: 15px;
   border: none;
   border-radius: 50%;
-  margin: 30px;
+  margin: 20px;
   position: fixed;
   top: 0;
   right: 0;
@@ -253,39 +253,34 @@ li {
   outline: none;
 }
 
+.header-logo {
+  width: 65px;
+  height: 65px;
+}
+
 .fv {
   width: 100vw;
   height: 80vh;
-  background: url(../images/storytelling-4203628_641.jpg);
+  background: url(../images/mybg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
 
-.fv .main-copy {
-  padding: 80px 0 0 5%;
-  color: #354e59;
-  font-family: "Sacramento", cursive;
-  text-shadow: 0 1px 0 #ccc, 0 3px 0 #ccc, 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 959px) {
-  .fv .main-copy {
-    font-size: 2.6rem;
-    text-align: center;
-    padding-left: 0;
-  }
-}
-
 .fv .main-copy h2 {
-  font-size: 6rem;
+  color: #fff;
+  font-family: "Sacramento", cursive;
+  padding: 80px 0 0 5%;
+  font-size: 8rem;
   font-weight: normal;
+  text-shadow: 0 1px 0 #354e59, 0 3px 0 #354e59, 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 959px) {
   .fv .main-copy h2 {
-    font-size: 2.6rem;
+    padding-left: 0;
+    font-size: 4.8rem;
     text-align: center;
   }
 }
@@ -463,10 +458,11 @@ li {
 
 .submit-btn {
   display: block;
-  background: #F7D43F;
+  background: #66ebc3;
   width: 235px;
   border-radius: 50px;
   padding: 20px 70px;
+  font-size: 1.2rem;
   box-shadow: 0 0 8px #272727;
   margin: 0 auto;
   border: none;
