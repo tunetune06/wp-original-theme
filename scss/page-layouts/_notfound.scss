@@ -1,0 +1,7 @@
+.notfound {
+  text-align: center;
+  &__link {
+    color: $color-accent-green;
+    text-decoration: underline;
+  }
+}

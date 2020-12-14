@@ -1,0 +1,97 @@
+//*  変数管理
+
+//color
+$color-black: #141414;
+$color-white: #fff;
+$color-main: #f0ece7;
+$color-accent: #6f6152;
+$color-accent-green: #354e59;
+
+//font-family
+$font-main: "Noto Sans JP", "游ゴシック", YuGothic, "ヒラギノ角ゴシック Pro",
+  "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Droid Sans", sans-serif;
+$font-accent: "Miltonian", cursive;
+$font-accent-tattoo: "Miltonian Tattoo", cursive;
+
+//*  font-size定義
+//$sizeにpx表示を入れて使う
+@mixin rem($size) {
+  font-size: $size + px; /*IE9以前に対応する*/
+  font-size: ($size / 16) + rem;
+}
+
+//*  レスポンシブ定義
+//ブレイクポイント
+//ブレイクポイント
+$tb: 959px; //タブレット
+$mb: 559px; //スマホ
+
+//@mediaのフォーマット
+//タブレット
+@mixin tablet {
+  @media screen and (max-width: $tb) {
+    @content;
+  }
+}
+//スマホ
+@mixin mobile {
+  @media screen and (max-width: $mb) {
+    @content;
+  }
+}
+
+//*  base(共通)
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  color: $color-black;
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  user-select: none;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+li {
+  list-style: none;
+}
+
+// ページタイトル共通スタイル
+.page-title {
+  text-align: center;
+  background-color: $color-accent;
+  padding: 30px;
+  &__text {
+    display: inline-block;
+    color: $color-white;
+    @include rem(56);
+    font-family: $font-accent;
+    @include mobile {
+      @include rem(48);
+    }
+  }
+}
+
+//sectionの共通inner設定
+.content-common {
+  margin: 90px 15%;
+  padding: 16px 4vw;
+  @include mobile {
+    margin: 90px 15px;
+  }
+}
+
+@mixin mainbg() {
+  background-color: $color-main;
+  box-shadow: 3px 3px 10px 0px rgba(138, 117, 85, 0.75) inset,
+    -3px -3px 10px 0px rgba(138, 117, 85, 0.75) inset;
+}

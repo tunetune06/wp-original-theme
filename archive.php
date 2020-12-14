@@ -1,11 +1,15 @@
-<!-- ブログ記事一覧ページ -->
+<!-- カテゴリー/月別ページ -->
 <?php get_header(); ?>
 <div class="page-title">
   <h2 class="page-title__text">Blog</h2>
 </div>
 <?php get_template_part('template-parts/breadcrumb'); ?>
 <main class="my-archive">
-  <h2 class="my-archive__page-title">ブログ記事一覧</h2>
+  <?php if (is_month()) : ?>
+    <h2 class="my-archive__page-title"><?php the_time('Y年m月'); ?></h2>
+  <?php else : ?>
+    <h2 class="my-archive__page-title"><?php the_category(); ?></h2>
+  <?php endif; ?>
   <div class="my-archive__inner">
     <?php get_template_part('template-parts/loop', 'blog'); ?>
     <div class="sidebar-wrapper">

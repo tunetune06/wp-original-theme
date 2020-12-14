@@ -1,0 +1,14 @@
+.about {
+  &__img {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

@@ -1,8 +1,8 @@
 <!-- フッターパーツ -->
 <footer class="footer">
-  <div class="footer-wrapper">
+  <div class="footer__inner">
       <?php if(is_active_sidebar('footer')) : ?>
-        <ul class="footer-widgets">
+        <ul class="footer__widgets">
           <li class="widget">
             <h3 class="widgettitle">プロフィール</h3>
             <p class="profile-img"><img src="<?php echo get_template_directory_uri(); ?>/images/profile-icon.jpg" alt=""></p>

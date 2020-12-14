@@ -1,0 +1,34 @@
+// Works個別ページ
+.w-article {
+  max-width: 1024px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid #ddd;
+  padding: 120px 15px 40px;
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include rem(40);
+    @include mobile {
+      @include rem(24);
+    }
+  }
+  &__link {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 40px 4vw 40px auto;
+    color: white;
+    background-color: $color-accent-green;
+    padding: 10px 30px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+  
+
+
+
+

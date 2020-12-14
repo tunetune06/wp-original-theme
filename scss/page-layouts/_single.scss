@@ -1,0 +1,51 @@
+// 投稿一覧ページ
+.article-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 10%;
+  @include mobile {
+    display: block;
+  }
+}
+.my-article {
+  flex: 1;
+  &__title {
+    text-align: center;
+    @include rem(40);
+    @include mobile {
+      @include rem(24);
+    }
+  }
+  &__date {
+    text-align: right;
+    margin: 0 40px;
+  }
+  &__eye {
+    margin: 5px 40px 15px;
+  }
+  .post-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px 80px;
+    li {
+      padding-right: 10px;
+      a {
+        line-height: 1;
+        display: inline-block;
+        padding: 5px 10px;
+        @include rem(14);
+        border: 1px solid $color-accent-green;
+        color: $color-accent-green;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+  
+
+
+
+

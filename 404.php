@@ -1,10 +1,12 @@
 <!-- 404ページ -->
 <?php get_header(); ?>
-  <main>
-    <div class="section-common">
-      <h2 class="section-title">Not Found</h2>
-      <p class="text-notfound">お探しのページは見つかりませんでした。</p>
-    </div>
-  </main>
-  <?php get_footer(); ?>
-  
+<div class="page-title">
+  <h2 class="page-title__text">404 NOT FOUND</h2>
+</div>
+<main>
+  <div class="content-common">
+    <p class="notfound">お探しのページは見つかりませんでした。<br>
+    申し訳ございませんが、<a class="notfound__link" href="<?php echo home_url(); ?>">こちらのリンク</a>からトップページにお戻りください。</p>
+  </div>
+</main>
+<?php get_footer(); ?>

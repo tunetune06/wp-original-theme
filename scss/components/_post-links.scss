@@ -1,0 +1,46 @@
+.post-links {
+	margin-top: 50px;
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-link {
+	width: 50%;
+	padding: 15px 0;
+
+	a {
+		text-decoration: none;
+		@include rem(14);
+	}
+}
+
+.post-link_prev {
+	i,
+	svg {
+		margin-right: 10px;
+	}
+}
+
+.post-link_next {
+	text-align: right;
+
+	i,
+	svg {
+		margin-left: 10px;
+	}
+}
+@include mobile {
+	.post-links {
+		margin-top: 20px;
+	}
+
+	.post-link {
+		padding: 0;
+
+		a {
+			@include rem(12);
+		}
+	}
+}

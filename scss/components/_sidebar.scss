@@ -1,0 +1,60 @@
+.aside {
+  border: 1px solid #ddd;
+  width: 25%;
+  min-width: 250px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  @include mobile {
+    margin-left: 0;
+  }
+  @include mobile {
+    width: 100%;
+  }
+  &:last-child {
+    margin-bottom: 0;
+    @include mobile {
+      margin-bottom: 30px
+    }
+  }
+  &__title {
+    @include rem(16);
+    padding: 20px 10px;
+    line-height: 1;
+    border-bottom: 1px solid #ddd;
+  }
+  &__list {
+    li {
+      margin: 0;
+      border-bottom: 1px solid #ddd;
+      line-height: 1;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        padding: 20px 10px;
+        display: block;
+        text-decoration: none;
+        position: relative;
+        line-height: 1;
+        transition: all 300ms 0s ease;
+        &:after {
+          font-weight: 900;
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          display: block;
+          margin-top: -0.5em;
+          @include rem(14);
+          content: "\f105";
+          font-family: "Font Awesome 5 Free";
+          color: rgb(83, 82, 82);
+        }
+        &:hover {
+          background-color: rgba(#bbb, 0.1);
+        }
+      }
+    }
+  }
+}

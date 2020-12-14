@@ -1,13 +1,13 @@
-<!-- 固定ページ -->
+<!-- 固定ページ(contact) -->
 <?php get_header(); ?>
-
-<main>
-  <article class="section-common">
-    <?php while(have_posts()) : the_post(); ?>
-      <h2 class="section-title"><?php the_title(); ?></h2>
-        <?php the_content(); ?>
-        <?php endwhile; ?>
-  </article>
-</main>
+<?php while (have_posts()) : the_post(); ?>
+  <div class="page-title">
+    <h2 class="page-title__text"><?php the_title(); ?></h2>
+  </div>
+  <?php get_template_part('template-parts/breadcrumb'); ?>
+  <main class="content-common">
+    <?php the_content(); ?>
+  </main>
+<?php endwhile; ?>
 
 <?php get_footer(); ?>
