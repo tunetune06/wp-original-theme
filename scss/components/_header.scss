@@ -1,6 +1,6 @@
 // ヘッダーのスタイル
 .header {
-  @include mainbg;
+  background-color: $color-main;
   height: 90px;
   padding: 0 4vw;
   display: flex;
@@ -17,6 +17,7 @@
   }
 }
 
+
 .logo {
   width: 80px;
   height: 80px;
@@ -29,7 +30,9 @@
 // h1要素
 .site-title {
   color: $color-black;
-  @include rem(12);
+  font-family: $font-jose;
+  font-weight: bold;
+  @include rem(16);
   margin: 0 0 10px 10px;
   @include mobile {
     @include rem(8);
@@ -48,13 +51,16 @@
     display: flex;
     li {
       a {
+        font-family: $font-jose;
+        font-weight: bold;
+        letter-spacing: .1em;
         text-align: center;
         line-height: 90px;
         padding: 0 20px;
         display: inline-block;
         height: 100%;
         &:hover {
-          @include mainbg;
+          text-decoration: underline;
         }
       }
     }
@@ -64,7 +70,7 @@
 // ハンバーガーアイコン
 .burger {
   display: none;
-  @include mainbg;
+  background-color: $color-main;
   border: none;
   padding: 15px;
   position: fixed;
@@ -97,9 +103,6 @@
   top: 0;
   right: -100%;
   background: $color-accent-green;
-  box-shadow: 3px 3px 10px 5px rgba(10, 10, 10, 0.75) inset,
-    -3px -3px 10px 5px rgba(10, 10, 10, 0.75) inset,
-    -10px 0px 10px 5px rgba(10, 10, 10, 0.75);
   padding: 8px;
   box-sizing: border-box;
   width: 80%;
@@ -114,6 +117,9 @@
     margin-bottom: 50px;
     a {
       color: #fff;
+      font-family: $font-jose;
+      font-weight: bold;
+      letter-spacing: .2em;
     }
   }
 }

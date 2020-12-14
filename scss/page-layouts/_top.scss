@@ -31,7 +31,7 @@
 .main-copy {
   &_text {
     color: $color-white;
-    font-family: $font-accent-tattoo;
+    font-family: $font-accent-sacra;
     padding: 80px 0 0 7%;
     font-size: 8rem;
     font-weight: normal;
@@ -40,5 +40,108 @@
       @include rem(56);
       text-align: center;
     }
+  }
+}
+
+@mixin cover($content) {
+  position: relative;
+  display: inline-block;
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 90;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &::after {
+    position: absolute;
+    content: $content;
+    color: $color-white;
+    @include rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.message-sec {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+  text-orientation: upright; /* すべて縦方向に表示 */
+  width: 100%;
+  height: 90vh;
+  padding: 40px 15%;
+  @include tablet {
+    padding: 40px 15px;
+  }
+  background-color: rgb(71, 69, 69);
+  color: $color-white;
+  &__title {
+    margin-left: 80px;
+    @include tablet {
+      margin-left: 5px;
+    }
+    @include mobile {
+      @include rem(18);
+    }
+  }
+  &__text {
+    line-height: 3em;
+    margin-top: 10px;
+    @include tablet {
+      line-height: 2em;
+    }
+    @include mobile {
+      line-height: normal;
+      @include rem(12);
+    }
+  }
+}
+.nav-sec {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    font-family: $font-jose;
+    letter-spacing: 0.2em;
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+    }
+    img {
+      width: 100%;
+      height: 250px;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+  &__item1 {
+    @include cover("ABOUT");
+  }
+  &__item2 {
+    @include cover("BLOG");
+  }
+  &__item3 {
+    @include cover("WORKS");
+  }
+  &__item4 {
+    @include cover("CONTACT");
+  }
+}
+
+.hover-ef:hover {
+  &::before {
+    opacity: 0.2;
   }
 }

@@ -91,7 +91,7 @@ li {
 
 .page-title {
   text-align: center;
-  background-color: #6f6152;
+  background-color: #7c7575;
   padding: 30px;
 }
 
@@ -113,19 +113,17 @@ li {
 }
 
 .content-common {
-  margin: 90px 15%;
-  padding: 16px 4vw;
+  padding: 90px 15%;
 }
 
 @media screen and (max-width: 559px) {
   .content-common {
-    margin: 90px 15px;
+    padding: 90px 15px;
   }
 }
 
 .header {
   background-color: #f0ece7;
-  box-shadow: 3px 3px 10px 0px rgba(138, 117, 85, 0.75) inset, -3px -3px 10px 0px rgba(138, 117, 85, 0.75) inset;
   height: 90px;
   padding: 0 4vw;
   display: flex;
@@ -160,9 +158,11 @@ li {
 
 .site-title {
   color: #141414;
-  font-size: 12px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 16px;
   /*IE9以前に対応する*/
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin: 0 0 10px 10px;
 }
 
@@ -192,6 +192,9 @@ li {
 }
 
 .nav-wrapper ul li a {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  letter-spacing: .1em;
   text-align: center;
   line-height: 90px;
   padding: 0 20px;
@@ -200,14 +203,12 @@ li {
 }
 
 .nav-wrapper ul li a:hover {
-  background-color: #f0ece7;
-  box-shadow: 3px 3px 10px 0px rgba(138, 117, 85, 0.75) inset, -3px -3px 10px 0px rgba(138, 117, 85, 0.75) inset;
+  text-decoration: underline;
 }
 
 .burger {
   display: none;
   background-color: #f0ece7;
-  box-shadow: 3px 3px 10px 0px rgba(138, 117, 85, 0.75) inset, -3px -3px 10px 0px rgba(138, 117, 85, 0.75) inset;
   border: none;
   padding: 15px;
   position: fixed;
@@ -243,7 +244,6 @@ li {
   top: 0;
   right: -100%;
   background: #354e59;
-  box-shadow: 3px 3px 10px 5px rgba(10, 10, 10, 0.75) inset, -3px -3px 10px 5px rgba(10, 10, 10, 0.75) inset, -10px 0px 10px 5px rgba(10, 10, 10, 0.75);
   padding: 8px;
   box-sizing: border-box;
   width: 80%;
@@ -262,6 +262,9 @@ li {
 
 #menu li a {
   color: #fff;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  letter-spacing: .2em;
 }
 
 .menu-open {
@@ -284,93 +287,31 @@ li {
   transform: translateY(-11px) rotate(-135deg);
 }
 
-.footer__inner {
-  background-color: #f0ece7;
-  box-shadow: 3px 3px 10px 0px rgba(138, 117, 85, 0.75) inset, -3px -3px 10px 0px rgba(138, 117, 85, 0.75) inset;
-  padding: 40px 5%;
-}
-
-@media screen and (max-width: 559px) {
-  .footer__inner {
-    padding: 40px 10px;
-  }
-}
-
-.footer__widgets {
+.footer {
+  background: #ccc;
+  height: 200px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 559px) {
-  .footer__widgets {
-    display: block;
-  }
+.footer i {
+  color: #fff;
+  padding: 0 5px;
 }
 
-.footer__widgets .widget {
-  width: 25%;
-}
-
-@media screen and (max-width: 559px) {
-  .footer__widgets .widget {
-    width: auto;
-    margin-bottom: 120px;
-  }
-}
-
-.footer__widgets .widget .widgettitle {
-  font-size: 1.4rem;
-  font-weight: bold;
-  padding: 1rem 0;
-  border-bottom: 6px double #000;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 559px) {
-  .footer__widgets .widget .widgettitle {
-    text-align: center;
-  }
-}
-
-.footer__widgets .widget li,
-.footer__widgets .widget .profile-name {
+.icon-wrapper {
   margin-bottom: 20px;
 }
 
-.footer__widgets .widget li {
-  padding-left: 10px;
-}
-
-.footer__widgets .widget .profile-img {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 20px;
-}
-
-.footer__widgets .widget .profile-img img {
-  border-radius: 50%;
-}
-
-.footer__widgets .widget .profile-name {
+.copyright {
   text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.footer__widgets .widget .profile-text {
-  text-align: left;
-}
-
-.footer .copyright {
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  background: #585858;
   color: #fff;
 }
 
 @media screen and (max-width: 559px) {
-  .footer .copyright {
+  .copyright {
     font-size: 0.7rem;
   }
 }
@@ -619,7 +560,7 @@ li {
 
 .main-copy_text {
   color: #fff;
-  font-family: "Miltonian Tattoo", cursive;
+  font-family: "Sacramento", cursive;
   padding: 80px 0 0 7%;
   font-size: 8rem;
   font-weight: normal;
@@ -633,6 +574,223 @@ li {
     font-size: 3.5rem;
     text-align: center;
   }
+}
+
+.message-sec {
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+  text-orientation: upright;
+  /* すべて縦方向に表示 */
+  width: 100%;
+  height: 90vh;
+  padding: 40px 15%;
+  background-color: #474545;
+  color: #fff;
+}
+
+@media screen and (max-width: 959px) {
+  .message-sec {
+    padding: 40px 15px;
+  }
+}
+
+.message-sec__title {
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 959px) {
+  .message-sec__title {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .message-sec__title {
+    font-size: 18px;
+    /*IE9以前に対応する*/
+    font-size: 1.125rem;
+  }
+}
+
+.message-sec__text {
+  line-height: 3em;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 959px) {
+  .message-sec__text {
+    line-height: 2em;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .message-sec__text {
+    line-height: normal;
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
+}
+
+.nav-sec__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  font-family: "Josefin Slab", serif;
+  letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 559px) {
+  .nav-sec__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.nav-sec__list img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.nav-sec__item1 {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-sec__item1::before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-sec__item1::after {
+  position: absolute;
+  content: "ABOUT";
+  color: #fff;
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-sec__item2 {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-sec__item2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-sec__item2::after {
+  position: absolute;
+  content: "BLOG";
+  color: #fff;
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-sec__item3 {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-sec__item3::before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-sec__item3::after {
+  position: absolute;
+  content: "WORKS";
+  color: #fff;
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-sec__item4 {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-sec__item4::before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-sec__item4::after {
+  position: absolute;
+  content: "CONTACT";
+  color: #fff;
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hover-ef:hover::before {
+  opacity: 0.2;
 }
 
 .about__img {
@@ -803,8 +961,6 @@ li {
 }
 
 .works-archive {
-  background: #141414;
-  color: #fff;
   padding: 0;
 }
 
@@ -831,15 +987,6 @@ li {
   }
 }
 
-.works-archive .breadcrumb {
-  background: #141414;
-  margin: 0;
-}
-
-.works-archive .breadcrumb a {
-  color: #fff;
-}
-
 .works {
   margin-bottom: 120px;
 }
@@ -861,40 +1008,6 @@ li {
     /*IE9以前に対応する*/
     font-size: 1rem;
   }
-}
-
-.works__link {
-  position: relative;
-  display: inline-block;
-}
-
-.works__link:hover:before {
-  position: absolute;
-  content: '';
-  display: block;
-  z-index: 90;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.works__link:hover:after {
-  position: absolute;
-  content: 'CLICK';
-  color: #fff;
-  font-size: 58px;
-  /*IE9以前に対応する*/
-  font-size: 3.625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .w-article {

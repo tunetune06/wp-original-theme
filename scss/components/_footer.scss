@@ -1,68 +1,25 @@
 // フッターのスタイル
 .footer {
-  &__inner {
-    @include mainbg;
-    padding: 40px 5%;
-    @include mobile {
-      padding: 40px 10px;
-    }
+  background: #ccc;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  i {
+    color: $color-white;
+    padding: 0 5px;
   }
-  &__widgets {
-    display: flex;
-    justify-content: space-around;
-    @include mobile {
-      display: block;
-    }
-    .widget {
-      width: 25%;
-      @include mobile {
-        width: auto;
-        margin-bottom: 120px;
-      }
-      .widgettitle {
-        font-size: 1.4rem;
-        font-weight: bold;
-        padding: 1rem 0;
-        border-bottom: 6px double #000;
-        margin-bottom: 50px;
-        @include mobile {
-          text-align: center;
-        }
-      }
-      li,
-      .profile-name {
-        margin-bottom: 20px;
-      }
-      li {
-        padding-left: 10px;
-      }
-      .profile-img {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto 20px;
-        img {
-          border-radius: 50%;
-        }
-      }
-      .profile-name {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
-      .profile-text {
-        text-align: left;
-      }
-    }
-  }
-  // コピーライト
-  .copyright {
-    height: 44px;
-    line-height: 44px;
-    text-align: center;
-    background: rgb(88, 88, 88);
-    color: #fff;
-    @include mobile {
-      font-size: 0.7rem;
-    }
+}
+
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+// コピーライト
+.copyright {
+  text-align: center;
+  color: #fff;
+  @include mobile {
+    font-size: 0.7rem;
   }
 }

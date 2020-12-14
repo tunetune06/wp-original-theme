@@ -1,6 +1,4 @@
 .works-archive {
-  background:$color-black;
-  color: $color-white;
   padding: 0;
   &__inner {
     max-width: 700px;
@@ -14,14 +12,6 @@
     margin-bottom: 24px;
     @include mobile {
       @include rem(32);
-    }
-  }
-  
-  .breadcrumb {
-    background: $color-black;
-    margin: 0 ;
-    a {
-      color: $color-white;
     }
   }
 }
@@ -38,35 +28,5 @@
       @include rem(16);
     }
   }
-  &__link {
-    position: relative;
-    display: inline-block;
-    &:hover {
-      &:before {
-        position: absolute;
-        content: '';
-        display: block;
-        z-index: 90;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, .5);
-      }
-      &:after {
-        position: absolute;
-        content: 'CLICK';
-        color: $color-white;
-        @include rem(58);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 100;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-    }
-  }
+  
 }

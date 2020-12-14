@@ -10,7 +10,7 @@ function add_my_styles_and_scripts() {
   );
   wp_enqueue_style(
     'google-font',
-    'https://fonts.googleapis.com/css2?family=Miltonian&family=Miltonian+Tattoo&display=swap',
+    'https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Miltonian&family=Sacramento&display=swap',
     array(),
     null
   );
@@ -58,15 +58,6 @@ function my_wp_setup() {
   ]);
 }
 add_action('after_setup_theme', 'my_wp_setup');
-
-// ウィジェっトフック
-function my_widgets_init() {
-  register_sidebar([
-    'name' => 'Footer',
-    'id' => 'footer',
-  ]);
-}
-add_action('widgets_init', 'my_widgets_init');
 
 // 抜粋の文字制限
 function new_excerpt_mblength($length) {
