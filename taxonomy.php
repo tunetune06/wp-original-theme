@@ -1,7 +1,7 @@
 <!-- 投稿一覧ページ -->
 <?php get_header(); ?>
 <div class="page-title">
-  <h2 class="page-title__text"><?php the_title(); ?></h2>
+  <h2 class="page-title__text">Works</h2>
 </div>
 <main class="works-archive">
   <?php get_template_part('template-parts/breadcrumb'); ?>
