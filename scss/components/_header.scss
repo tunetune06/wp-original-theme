@@ -76,7 +76,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 4;
   cursor: pointer;
   outline: none;
   @include tablet {
@@ -98,7 +98,7 @@
 
 // ハンバーガーメニューを開いた時のstyle
 #menu {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0;
   right: -100%;

@@ -214,7 +214,7 @@ li {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 4;
   cursor: pointer;
   outline: none;
 }
@@ -239,7 +239,7 @@ li {
 }
 
 #menu {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0;
   right: -100%;
@@ -412,6 +412,12 @@ li {
 .pagination {
   display: block;
   text-align: center;
+}
+
+@media screen and (max-width: 559px) {
+  .pagination {
+    margin-bottom: 30px;
+  }
 }
 
 .pagination li {
@@ -662,7 +668,7 @@ li {
   position: absolute;
   content: "";
   display: block;
-  z-index: 90;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -680,7 +686,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 2;
   top: 0;
   right: 0;
   bottom: 0;
@@ -696,7 +702,7 @@ li {
   position: absolute;
   content: "";
   display: block;
-  z-index: 90;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -714,7 +720,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 2;
   top: 0;
   right: 0;
   bottom: 0;
@@ -730,7 +736,7 @@ li {
   position: absolute;
   content: "";
   display: block;
-  z-index: 90;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -748,7 +754,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 2;
   top: 0;
   right: 0;
   bottom: 0;
@@ -764,7 +770,7 @@ li {
   position: absolute;
   content: "";
   display: block;
-  z-index: 90;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -782,7 +788,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 2;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1008,6 +1014,63 @@ li {
     /*IE9以前に対応する*/
     font-size: 1rem;
   }
+}
+
+.works .works {
+  margin-bottom: 120px;
+}
+
+.works .works__item {
+  text-align: center;
+}
+
+.works .works__title {
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 559px) {
+  .works .works__title {
+    font-size: 16px;
+    /*IE9以前に対応する*/
+    font-size: 1rem;
+  }
+}
+
+.works .works__link {
+  position: relative;
+  display: inline-block;
+}
+
+.works .works__link:hover:before {
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.works .works__link:hover:after {
+  position: absolute;
+  content: 'CLICK';
+  color: #fff;
+  font-size: 58px;
+  /*IE9以前に対応する*/
+  font-size: 3.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .w-article {

@@ -1,6 +1,9 @@
 .pagination {
   display: block;
   text-align: center;
+  @include mobile {
+    margin-bottom: 30px;
+  }
   li {
     display: inline-block;
   }
