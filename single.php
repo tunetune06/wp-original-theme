@@ -7,11 +7,7 @@
 <div class="article-wrapper">
 	<article class="my-article">
 		<?php while (have_posts()) : the_post(); ?>
-			<h2 class="my-article__title"><?php the_title(); ?></h2>
-			<p class="my-article__date">
-				<timedatetime="<?php echo get_the_date(DATE_W3C); ?>"><i class="fas fa-clock time-icon"></i><?php echo get_the_date(); ?></timedatetime=>
-			</p>
-			<?php if (has_post_thumbnail()) : ?>
+		<?php if (has_post_thumbnail()) : ?>
 				<div class="my-article__eye">
 					<?php the_post_thumbnail('my-hero'); ?>
 				</div>
@@ -20,6 +16,10 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/images/noimage.jpg" alt="">
 				</div>
 			<?php endif; ?>
+			<h2 class="my-article__title"><?php the_title(); ?></h2>
+			<p class="my-article__date">
+				<timedatetime="<?php echo get_the_date(DATE_W3C); ?>"><i class="fas fa-clock time-icon"></i><?php echo get_the_date(); ?></timedatetime=>
+			</p>
 			<?php the_category(); ?>
 			<div class="my-article__content">
 				<?php the_content(); ?>

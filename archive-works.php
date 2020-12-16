@@ -17,12 +17,12 @@
           <h2 class="works-archive__name"><?php echo $kind->name; ?></h2>
           <div>
             <?php
-            // メニューの投稿タイプ
+            // worksの投稿タイプ
             $args = array(
               'post_type' => 'works',
               'posts_per_page' => -1,
             );
-            // 料理の種類で絞り込む
+            // worksの種類で絞り込む
             $taxquerysp = array('relation' => 'AND');
             $taxquerysp[] = array(
               'taxonomy' => 'kind',
